@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import SocialMediaBar from './Components/SocialMediaBar/SocialMediaBar';
+import HeaderBar from './Components/HeaderBar/HeaderBar';
+import './Fonts.css';
 import './App.css';
+import { formatWithOptions } from 'util';
+
+// const colors = {
+//   sage: "#60AB68",
+//   green: "#8EBE68",
+//   pink: "#F6C3A8",
+//   fuschia: "#E91E87",
+//   paleyellow: "#E7D980"
+// };
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <SocialMediaBar />
+        <HeaderBar />
+        <header className="App-header"></header>
       </div>
     );
   }
-}
+};
 
 export default App;
