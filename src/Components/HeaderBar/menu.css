@@ -1,0 +1,19 @@
+
+@media (max-width: 768px) {
+    .showMenu {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .hideMenu {
+        display: none;
+    } 
+
+    .showLogo {
+        display: unset;
+    }
+    
+    .hideLogo {
+        display: none;
+    } 
+}
