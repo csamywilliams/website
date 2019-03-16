@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SocialMediaBar from './Components/SocialMediaBar/SocialMediaBar';
 import HeaderBar from './Components/HeaderBar/HeaderBar';
+import MainPage from './Components/MainPage/MainPage';
 import PostPreview from './Components/PostPreview/PostPreview';
 import './Fonts.css';
 import './App.css';
@@ -19,6 +20,7 @@ class App extends Component {
       <div className="App">
         <SocialMediaBar />
         <HeaderBar />
+        <MainPage />
         {/* <PostPreview /> */}
       </div>
     );
