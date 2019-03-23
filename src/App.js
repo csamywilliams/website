@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
+import { ThemeProvider } from 'styled-components';
 import SocialMediaBar from './Components/SocialMediaBar/SocialMediaBar';
 import HeaderBar from './Components/HeaderBar/HeaderBar';
 import MainPage from './Components/MainPage/MainPage';
 import PostPreview from './Components/PostPreview/PostPreview';
+import theme from "./theme";
 import './Fonts.css';
 import './App.css';
-
-// const colors = {
-//   sage: "#60AB68",
-//   green: "#8EBE68",
-//   pink: "#F6C3A8",
-//   fuschia: "#E91E87",
-//   paleyellow: "#E7D980"
-// };
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <SocialMediaBar />
-        <HeaderBar />
-        <MainPage />
-        {/* <PostPreview /> */}
+        <ThemeProvider theme={theme.main}>
+          <div>
+            <SocialMediaBar />
+            <HeaderBar />
+            <MainPage />
+          </div>
+        </ThemeProvider>
       </div>
+      
     );
   }
 };

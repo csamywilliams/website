@@ -12,6 +12,7 @@ export const Header = styled.nav`
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    border-bottom: 1px solid ${props => props.theme.navbar.border};
 `;
 
 export const Logo = styled.img`
@@ -61,11 +62,11 @@ export const MenuLink = styled.a`
     text-decoration: none;
     display: block;
     padding: 1em;
-    color: #2D1710;
+    color: ${props => props.theme.link.color};
     flex: 0 0 auto; 
 
     :hover {
-        border-bottom: 5px #EED093 solid;
+        border-bottom: 5px ${props => props.theme.link.hover} solid;
     }
 `;
 
@@ -84,8 +85,8 @@ export const Hamburger = styled.div`
         left: 0;
         width: 1em;
         height: 0.125em;
-        border-top: 0.375em double #fff;
-        border-bottom: 0.125em solid #fff;
+        border-top: 0.375em double ${props => props.theme.hamburger.lines};
+        border-bottom: 0.125em solid ${props => props.theme.hamburger.lines};
     }
 
     ${media.tablet`

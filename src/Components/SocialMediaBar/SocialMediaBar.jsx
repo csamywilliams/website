@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 export const Bar = styled.header`
-    background: #EED093;
+    background: ${props => props.theme.navbar.bg};
     height: 3vh;
     min-height: 3vh;
     text-align: right;
