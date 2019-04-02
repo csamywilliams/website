@@ -1,4 +1,5 @@
 const paleOrange = '#EED093';
+const beige = '#FBF8F3';
 const green = '#8EBE68';
 const sage = '#60AB68';
 const pink = '#F6C3A8';
@@ -12,7 +13,12 @@ const theme = {
         button: {
             primary: {
                 bg: green,
-                color: white
+                color: white,
+                hover: {
+                    bg: white,
+                    color: green,
+                    border: green,
+                }
             }
         },
         navbar: {
@@ -25,6 +31,18 @@ const theme = {
         },
         hamburger: {
             lines: white,
+        },
+        section: {
+            weather: {
+                bg: beige,
+                color: white
+            }
+        },
+        hexagon: {
+            bg: green
+        },
+        post: {
+            border: beige
         }
 
     }

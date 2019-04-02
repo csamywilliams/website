@@ -1,35 +1,26 @@
 import styled from 'styled-components';
 import media from '../../Utilities/MediaQueries';
 
-export const Grid = styled.div`
-  padding-top: 2vh;
-  display: grid;
-  margin: 0 auto;
-  width: 80vw;
-  grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 250px;
-  grid-auto-flow: row dense;
+export const Layout = styled.div`
+  margin: 0 15%;
+`;
+
+export const Flex = styled.div`
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 `;
 
 export const ItemA = styled.div`
-  grid-column: 1;
-  grid-row: 1 / span 2;
+  min-height: 50vh;
+  height: 50vh;
+  margin: 1%;
 `;
 
 export const ItemB = styled.div`
-  grid-column: 3;
-  grid-row: 1 / span 2;
-`;
-
-export const ItemC = styled.div`
-  grid-column: 2;
-  grid-row: 1;
-`;
-
-export const ItemD = styled.div`
-  grid-column: 2 ;
-  grid-row: 2 ;
+  min-height: 50vh;
+  height: 50vh;
+  margin: 1%;
 `;
 
 export const Image = styled.img`

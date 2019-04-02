@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import SocialMediaBar from './Components/SocialMediaBar/SocialMediaBar';
 import HeaderBar from './Components/HeaderBar/HeaderBar';
 import MainPage from './Components/MainPage/MainPage';
-import PostPreview from './Components/PostPreview/PostPreview';
+import PageFooter from './Components/PageFooter/PageFooter';
 import theme from "./theme";
 import './Fonts.css';
 import './App.css';
@@ -17,6 +17,7 @@ class App extends Component {
             <SocialMediaBar />
             <HeaderBar />
             <MainPage />
+            <PageFooter />
           </div>
         </ThemeProvider>
       </div>

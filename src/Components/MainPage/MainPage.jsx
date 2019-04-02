@@ -1,35 +1,63 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import IntroPosts from '../IntroPosts/IntroPosts';
+import BlogPosts from '../BlogPosts/BlogPosts';
+import Gallery from '../Gallery/Gallery';
 import { PrimaryButton } from '../UIComponents/UIComponents';
 
-const Page = styled.section`
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: nowrap;
-`;
-
-const AboutSection = styled.section`
+const Section = styled.section`
   margin: 0 auto;
   padding: 2%;
 `;
 
+const WeatherSection = styled.section`
+  height: 20vh;
+  min-height: 200px;
+  background-color: ${props => props.theme.section.weather.bg};
+  color: ${props => props.theme.section.weather.white};
+
+  h2 {
+    padding-top: 1%;
+  }
+`;
+
+const BlogSection = styled.section`
+  height: 40vh;
+  min-height: 400px;
+  background-color: ${props => props.theme.section.weather.bg};
+  color: ${props => props.theme.section.weather.white};
+
+  h2 {
+    padding-top: 1%;
+  }
+`;
+
 class MainPage extends Component {
- 
+
   render() {
 
     return (
-        <Page>
-          <AboutSection>
+        <main>
+          <Section>
             <h2>About Me</h2>
             <p>Hello, my name is Amy. I am a Front end web developer and beginner gardener. I have recently moved to a small holding farm and this is my journey to becoming an established gardener.</p>
             <p>I want to share with the World, all the lessons learnt, tips and tricks whilst growing beautiful flowers and home grown vegetables.</p>
             <PrimaryButton>Read more</PrimaryButton>
-          </AboutSection>
-        </Page>
+          </Section>
+          <WeatherSection>
+            <h2>Today's Weather Forecast</h2>
+          </WeatherSection>
+          <Section>
+            <h2>My Stories</h2>
+            <BlogPosts />
+          </Section>
+          <BlogSection>
+            <h2>Gallery</h2>
+            <Gallery />
+          </BlogSection>
+          <Section>
+            <h2>Keep in touch</h2>
+          </Section>
+        </main>
     );
   }
  

@@ -1,35 +1,46 @@
 import React, { Component } from 'react';
-import { Grid, ImageLink, Image, ItemA, ItemB, ItemC, ItemD } from './IntroPosts.styles';
-import PageImage from '../../Assets/Images/flowers.jpg';
-import PageImage2 from '../../Assets/Images/garden-portrait.jpeg';
+import { Layout, Flex, ImageLink, Image, ItemA, ItemB } from './IntroPosts.styles';
+import BlogImage from '../../Assets/Images/blog.png';
+import ReviewsImage from '../../Assets/Images/reviews.png';
+import GalleryImage from '../../Assets/Images/gallery.png';
+import InfoImage from '../../Assets/Images/little-things.png';
 
 class IntroPosts extends Component {
  
   render() {
 
     return (
-        <Grid>
-            <ItemA>
-              <ImageLink href="#">
-                <Image src={PageImage2} alt="text"/>
-              </ImageLink>
-            </ItemA>
-            <ItemB>
-              <ImageLink href="#">
-                <Image src={PageImage2} alt="text"/>
-              </ImageLink>
-            </ItemB>
-            <ItemC>
-              <ImageLink href="#">
-                <Image src={PageImage} alt="text"/>
-              </ImageLink>
-            </ItemC>
-            <ItemD>
-              <ImageLink href="#"> 
-                <Image src={PageImage} alt="text"/>
-              </ImageLink>
-            </ItemD>
-        </Grid>
+       <Layout>
+        <Flex>
+          <ItemA>
+            <ImageLink href="#">
+              <Image src={BlogImage} alt="text"/>
+            </ImageLink>
+          </ItemA>
+          <ItemA>
+            <ImageLink href="#">
+              <Image src={GalleryImage} alt="text"/>
+            </ImageLink>
+          </ItemA>
+        </Flex>
+        <Flex>
+          <ItemB>
+            <ImageLink href="#">
+              <Image src={BlogImage} alt="text"/>
+            </ImageLink>
+          </ItemB>
+          <ItemB>
+            <ImageLink href="#"> 
+              <Image src={GalleryImage} alt="text"/>
+            </ImageLink>
+          </ItemB>
+          <ItemB>
+            <ImageLink href="#"> 
+              <Image src={ReviewsImage} alt="text"/>
+            </ImageLink>
+          </ItemB>
+        </Flex>
+      </Layout>
     );
   }
  
