@@ -28,7 +28,21 @@ export const ImageHexagon = styled.div`
 `;
 
 export const Post = styled.div`
-    height: 40vh;
+    position: relative;
+    min-height: 50vh;
     width: 10vh;
     border: 2px solid ${props => props.theme.post.border};
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+`;
+
+export const PostSummary = styled.div`
+    background-color: ${props => props.theme.post.summary.bg};
+    opacity: .9;
+    height: 18vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 `;

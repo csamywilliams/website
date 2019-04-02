@@ -1,15 +1,49 @@
 import React, { Component } from 'react';
 import { Layout } from './BlogPosts.styles';
-import { Post } from '../UIComponents/UIComponents';
+import { Post, PostSummary } from '../UIComponents/UIComponents';
+
+import post1 from '../../Assets/Images/post1.jpg';
+import post2 from '../../Assets/Images/post2.jpg';
+import post3 from '../../Assets/Images/post3.jpg';
+import post4 from '../../Assets/Images/post4.jpg';
+import post5 from '../../Assets/Images/post5.jpg';
 
 class BlogPosts extends Component {
  
   render() {
 
-    const posts = [ '1', '2', '3', '4', '5'];
+    const posts = [ {
+        img: post1,
+        title: "Dahlia",
+        tagline: "A little information about Dahlias, how they grow and what they are like."
+      }, {
+        img: post2,
+        title: "The Veg patch",
+        tagline: "A long time ago there was a little veg patch."
+      }, {
+        img: post3,
+        title: "Rose",
+        tagline: "A tale as old as time"
+      }, {
+        img: post4,
+        title: "You say potato!",
+        tagline: "Can't really believe I just search for a song called 'the potato song'"
+      }, {
+        img: post5,
+        title: "It's time for a forage",
+        tagline: "I'm a little hardworking buzzzy bee."
+      }
+    ];
 
-    const postPreviews = posts.map((image, id) => {
-      return <Post key={id}></Post>;
+    const postPreviews = posts.map((post, id) => {
+      return (
+        <Post key={id} style={ { backgroundImage: `url(${post.img})` } }>
+            <PostSummary>
+                <h3>{post.title}</h3>
+                <p>{post.tagline}</p>
+            </PostSummary>
+        </Post>
+      );
     });
 
 

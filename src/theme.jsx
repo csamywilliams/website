@@ -42,7 +42,10 @@ const theme = {
             bg: green
         },
         post: {
-            border: beige
+            border: beige,
+            summary: {
+                bg: white
+            }
         }
 
     }
