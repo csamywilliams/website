@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { MdDateRange, MdAlarm } from 'react-icons/md';
 import { Layout } from './BlogPosts.styles';
-import { Post, PostSummary } from '../UIComponents/UIComponents';
+import { Post, PostSummary, PostIcon } from '../UIComponents/UIComponents';
+
 
 import post1 from '../../Assets/Images/post1.jpg';
 import post2 from '../../Assets/Images/post2.jpg';
@@ -41,6 +43,10 @@ class BlogPosts extends Component {
             <PostSummary>
                 <h3>{post.title}</h3>
                 <p>{post.tagline}</p>
+                <PostIcon>
+                  <MdDateRange />
+                  <span>11.04.2019</span> | <MdAlarm /> <span> 1 min read </span>
+                </PostIcon>
             </PostSummary>
         </Post>
       );

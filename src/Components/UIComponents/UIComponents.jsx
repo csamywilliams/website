@@ -35,7 +35,33 @@ export const Post = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s;
+    }
+
+    @-webkit-keyframes flash {
+        0% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes flash {
+        0% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 `;
+
 
 export const PostSummary = styled.div`
     background-color: ${props => props.theme.post.summary.bg};
@@ -45,4 +71,20 @@ export const PostSummary = styled.div`
     position: absolute;
     bottom: 0;
     left: 0;
+`;
+
+export const PostIcon = styled.div`
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+
+    & > svg {
+        vertical-align: middle;
+        padding: 0 .2rem;
+    }
+
+    & > span {
+        padding: 0 .3rem;
+    }
 `;
