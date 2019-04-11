@@ -25,6 +25,20 @@ export const ImageHexagon = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    animation: fallIn 2s ease-in;
+
+    @keyframes fallIn {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        60% {
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
 `;
 
 export const Post = styled.div`
@@ -51,7 +65,7 @@ export const Post = styled.div`
             opacity: 1;
         }
     }
-    
+
     @keyframes flash {
         0% {
             opacity: .4;

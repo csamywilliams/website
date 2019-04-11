@@ -45,7 +45,7 @@ class BlogPosts extends Component {
                 <p>{post.tagline}</p>
                 <PostIcon>
                   <MdDateRange />
-                  <span>11.04.2019</span> | <MdAlarm /> <span> 1 min read </span>
+                  <span>11.04.2019</span> | <MdAlarm /> <span>1 min read</span>
                 </PostIcon>
             </PostSummary>
         </Post>
