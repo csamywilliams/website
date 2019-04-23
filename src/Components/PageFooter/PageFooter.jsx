@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Layout } from './PageFooter.styles';
 
 class PageFooter extends Component {
 
@@ -8,9 +9,9 @@ class PageFooter extends Component {
     const year = date.getFullYear();
 
     return (
-        <footer>
+        <Layout>
           <p>&copy; { year } Bees of Bryncoch - Amy Williams. All rights reserved. </p>
-        </footer>
+        </Layout>
     );
   }
  

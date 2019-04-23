@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import BlogPosts from '../BlogPosts/BlogPosts';
 import Gallery from '../Gallery/Gallery';
 import { PrimaryButton } from '../UIComponents/UIComponents';
+import KeepInTouch from '../KeepInTouch/KeepInTouch';
 
 const Section = styled.section`
   margin: 0 auto;
@@ -56,6 +57,7 @@ class MainPage extends Component {
           </BlogSection>
           <Section>
             <h2>Keep in touch</h2>
+            <KeepInTouch />
           </Section>
         </main>
     );

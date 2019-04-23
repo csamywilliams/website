@@ -46,6 +46,13 @@ const theme = {
             summary: {
                 bg: white
             }
+        },
+        icons: {
+            color: green,
+            size: "2em"
+        },
+        footer: {
+            bg: paleOrange
         }
 
     }

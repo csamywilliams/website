@@ -28,15 +28,11 @@ export const ImageHexagon = styled.div`
     animation: fallIn 2s ease-in;
 
     @keyframes fallIn {
-        0% {
-            transform: translateY(-100%);
-            opacity: 0;
+        from {
+          transform: translateY(-50%);
         }
-        60% {
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(0%);
+        to {
+          transform: translateY(0%);
         }
     }
 `;
