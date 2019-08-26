@@ -41,9 +41,7 @@ class HeaderBar extends Component {
                         <MenuLink href="/contact">CONTACT</MenuLink>
                     </MenuItem>
                 </Menu>
-                <Hamburger onClick={this.toggleMenu}>
-                    
-                </Hamburger>
+                <Hamburger onClick={this.toggleMenu}></Hamburger>
             </Header>       
         )
     }

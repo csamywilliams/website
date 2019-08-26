@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import media from '../../Utilities/MediaQueries';
 
-export const Layout = styled.div`
+export const MainPageLayout = styled.div`
     width: 25%;
     margin: auto;
     display: flex;
@@ -12,3 +13,20 @@ export const Layout = styled.div`
         padding: .5em;
     }
 `;
+
+export const SocialBarLayout = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    & > a {
+        margin: .25em;
+        padding: .25em .5em;
+    }
+
+    ${media.tablet`
+        display:none;
+    `}
+`;
+

@@ -48,8 +48,14 @@ const theme = {
             }
         },
         icons: {
-            color: green,
-            size: "2em"
+            contact: {
+                color: green,
+                size: "2em",
+            },
+            bar: {
+                color: beige,
+                size: "30px"
+            }
         },
         footer: {
             bg: paleOrange
