@@ -75,22 +75,30 @@ export const Post = styled.div`
             opacity: 1;
         }
     }
+
+    ${media.tablet`
+        width: auto;
+    `}  
 `;
 
 
 export const PostSummary = styled.div`
     background-color: ${props => props.theme.post.summary.bg};
     opacity: .9;
-    height: 18vh;
+    height: 25vh;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
+
+    h3 {
+        margin: 12px 0;
+    }
 `;
 
 export const PostIcon = styled.div`
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 1.25rem;
     left: 0;
     right: 0;
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from '../../Utilities/MediaQueries';
 
 export const Layout = styled.div`
     display: flex;
@@ -9,4 +10,8 @@ export const Layout = styled.div`
         margin: .5em;
         padding: .5em;
     }
+
+    ${media.tablet`
+        flex-direction: column;
+    `}  
 `;

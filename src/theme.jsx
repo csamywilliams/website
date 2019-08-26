@@ -33,7 +33,11 @@ const theme = {
             lines: white,
         },
         section: {
-            weather: {
+            odd: {
+                bg: beige,
+                color: white
+            },
+            even: {
                 bg: beige,
                 color: white
             }
