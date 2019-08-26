@@ -12,6 +12,10 @@ export const MainPageLayout = styled.div`
         margin: .5em;
         padding: .5em;
     }
+
+    ${media.tablet`
+        width: auto;
+    `}    
 `;
 
 export const SocialBarLayout = styled.div`

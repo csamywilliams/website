@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from '../../Utilities/MediaQueries';
 
 export const PrimaryButton = styled.button`
     border: 0;
@@ -21,7 +22,7 @@ export const ImageHexagon = styled.div`
     height: 225px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);  margin: 20px 0px 140px 20px;
-    flex: 0 20%;
+    flex: 1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,6 +36,10 @@ export const ImageHexagon = styled.div`
           transform: translateY(0%);
         }
     }
+
+    ${media.tablet`
+        flex: 25%;
+    `}
 `;
 
 export const Post = styled.div`

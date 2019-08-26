@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import media from '../../Utilities/MediaQueries';
 import BlogPosts from '../BlogPosts/BlogPosts';
 import Gallery from '../Gallery/Gallery';
 import { PrimaryButton } from '../UIComponents/UIComponents';
@@ -30,6 +31,10 @@ const BlogSection = styled.section`
   h2 {
     padding-top: 1%;
   }
+
+  ${media.tablet`
+    height: auto;
+  `}
 `;
 
 class MainPage extends Component {
