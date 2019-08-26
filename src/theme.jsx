@@ -58,7 +58,7 @@ const theme = {
             },
             bar: {
                 color: beige,
-                size: "30px"
+                size: "1.5em"
             }
         },
         footer: {
