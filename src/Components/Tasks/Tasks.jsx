@@ -15,24 +15,24 @@ class Tasks extends Component {
       slidesToScroll: 1
     };
 
+    const tasks = [
+      "During warm weather ensure plants have been watered.",
+      "With Winter approaching learn your frost dates.",
+      "Stay close to water, when deciding where to plant.",
+      "Follow the Sun!",
+      "Do your research"
+    ]
+
+    const taskList = tasks.map(function(task){
+      return <div>
+        <h4>{task}</h4>
+      </div>;
+    })
+
     return (
       <div>
         <Slider {...settings}>
-          <div>
-            <h3>During warm weather ensure plants have been watered.</h3>
-          </div>
-          <div>
-            <h3>With Winter approaching learn your frost dates.</h3>
-          </div>
-          <div>
-            <h3>Stay close to water, when deciding where to plant.</h3>
-          </div>
-          <div>
-            <h3>Follow the Sun!</h3>
-          </div>
-          <div>
-            <h3>Do your research</h3>
-          </div>
+          {taskList}
         </Slider>
       </div>
     );
