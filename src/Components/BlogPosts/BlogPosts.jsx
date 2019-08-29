@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { MdDateRange, MdAlarm } from 'react-icons/md';
-import { Layout } from './BlogPosts.styles';
-import { Post, PostSummary, PostIcon } from '../UIComponents/UIComponents';
+import { Layout, Post, PostSummary, PostIcon } from './BlogPosts.styles';
 
 
 import post1 from '../../Assets/Images/post1.jpg';
