@@ -1,68 +1,70 @@
 const paleOrange = '#EED093';
 const beige = '#FBF8F3';
 const green = '#8EBE68';
-const sage = '#60AB68';
-const pink = '#F6C3A8';
-const fuschia = '#E91E87';
-const paleyellow = '#E7D980';
 const brown = '#2D1710';
 const white = '#fff';
+
+const color1 = beige;
+const color2 = paleOrange;
+const color3 = green;
+const color4 = beige;
+const color5 = green;
 
 const theme = {
     main: {
         button: {
             primary: {
-                bg: green,
+                bg: color5,
                 color: white,
                 hover: {
                     bg: white,
-                    color: green,
-                    border: green,
+                    color: color5,
+                    border: color5,
                 }
             }
         },
         navbar: {
-            bg: paleOrange,
-            border: paleOrange
+            bg: color2,
+            border: color2
         },
         link: {
-            hover: paleOrange,
-            color: brown
+            hover: color2,
+            color: color1
         },
         hamburger: {
             lines: white,
         },
         section: {
             odd: {
-                bg: beige,
+                bg: color4,
                 color: white
             },
             even: {
-                bg: beige,
+                bg: color4,
                 color: white
             }
         },
         hexagon: {
-            bg: green
+            bg: color5
         },
         post: {
-            border: beige,
+            border: color4,
             summary: {
                 bg: white
             }
         },
         icons: {
             contact: {
-                color: green,
+                color: color5,
                 size: "2em",
             },
             bar: {
-                color: beige,
+                color: color4,
                 size: "1.5em"
             }
         },
         footer: {
-            bg: paleOrange
+            bg: color2
         }
 
     }

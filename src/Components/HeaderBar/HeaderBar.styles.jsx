@@ -13,6 +13,7 @@ export const Header = styled.nav`
     flex-wrap: nowrap;
     justify-content: space-between;
     border-bottom: 1px solid ${props => props.theme.navbar.border};
+    align-items: center;
 `;
 
 export const Logo = styled.img`
@@ -31,7 +32,6 @@ export const LogoLink = styled.a`
 export const Menu = styled.ul`
     list-style-type: none;
     display: flex;
-    margin-right: 10%;
     flex-direction: row;
     justify-content: flex-end;
 

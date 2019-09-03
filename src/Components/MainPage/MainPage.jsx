@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import media from '../../Utilities/MediaQueries';
 import BlogPosts from '../BlogPosts/BlogPosts';
 import Gallery from '../Gallery/Gallery';
 import Tasks from '../Tasks/Tasks';
+import Weather from '../Weather/Weather';
 import { PrimaryButton } from '../UIComponents/UIComponents';
 import KeepInTouch from '../KeepInTouch/KeepInTouch';
 
@@ -36,6 +36,7 @@ class MainPage extends Component {
           </OddSection>
           <EvenSection>
             <h2>Today's Weather Forecast</h2>
+            <Weather />
           </EvenSection>
           <OddSection>
             <h2>Gallery</h2>

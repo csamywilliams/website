@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import theme from '../../theme';
 import KeepInTouch from '../KeepInTouch/KeepInTouch';
 import { SocialBarLayout } from '../KeepInTouch/KeepInTouch.styles';
-import media from '../../Utilities/MediaQueries';
 
 export const Bar = styled.header`
     background: ${props => props.theme.navbar.bg};
@@ -14,6 +13,7 @@ export const Bar = styled.header`
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 20px;
 `;
 
 class SocialMediaBar extends Component {

@@ -23,8 +23,8 @@ class Tasks extends Component {
       "Do your research"
     ]
 
-    const taskList = tasks.map(function(task){
-      return <div>
+    const taskList = tasks.map(function(task, idx){
+      return <div key={idx}>
         <h4>{task}</h4>
       </div>;
     })
