@@ -13,7 +13,7 @@ class Weather extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      data: {}
+      days: []
     };
   }
 
@@ -21,40 +21,35 @@ class Weather extends Component {
 
     const city = 'Neath';
     const openMapUrl = `http://api.openweathermap.org/data/2.5/find?q=${city}&type=like&units=metric&APPID=${APIKEY}`;
-    const _self = this;
 
     async function getWeather() {
-      
       try {
+        
         const response = await axios.get(openMapUrl);
-        console.log(response);
+        const data = await response;
 
-        if(response.data.code === 200) {
-          _self.setState({
-            isLoaded: true,
-            data: response.data
-          });
-        }
-
-      } catch (error) {
-        _self.setState({
-          isLoaded: false,
-          error
-        });
+        return data;
+        
+      } catch(error) {
+        console.log(error);
       }
+
+    
     }
-    getWeather();
+    getWeather().then((weather) => {
+      this.setState({
+        days: weather
+      });
+    });
   }
 
   render() {
-    const { error, isLoaded, days } = this.state;
+    const { days } = this.state;
 
     return (
       <div>
         <h3>Open weather map</h3>
-        <p>{error}</p>
-        <p>{isLoaded}</p>
-        <p>{days}</p>
+        <p>{days.toString()}</p>
       </div>
     );
   }
