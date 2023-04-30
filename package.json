@@ -8,7 +8,7 @@
     "react-dom": "^16.8.4",
     "react-icons": "^3.5.0",
     "react-image-gallery": "^0.8.14",
-    "react-scripts": "2.1.8",
+    "react-scripts": "5.0.1",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1"
   },
